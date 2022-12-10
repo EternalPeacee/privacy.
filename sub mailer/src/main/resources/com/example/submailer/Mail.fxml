@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="769.0" prefWidth="1414.0" style="-fx-background-color: #131316;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.submailer.MailController">
+    <children>
+        <ImageView fitHeight="773.0" fitWidth="1151.0" layoutX="254.0" layoutY="-1.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/pexels-kevin-bidwell-1388287.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="emailSection" layoutX="254.0" prefHeight="766.0" prefWidth="337.0" style="-fx-background-color: #232323;">
+            <children>
+                <AnchorPane prefHeight="147.0" prefWidth="337.0" style="-fx-border-color: black;">
+                    <children>
+                        <TextField fx:id="serachInput" layoutX="14.0" layoutY="43.0" prefHeight="35.0" prefWidth="207.0" promptText="Search" style="-fx-background-color: #232323; -fx-border-color: #343434;" />
+                        <Text fill="WHITE" layoutX="18.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inbox">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Text>
+                  <FontAwesomeIconView fx:id="search" fill="WHITE" glyphName="SEARCH" layoutX="234.0" layoutY="68.0" size="22">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></FontAwesomeIconView>
+                    </children>
+                </AnchorPane>
+            <ListView layoutX="-1.0" layoutY="147.0" prefHeight="619.0" prefWidth="337.0" style="-fx-background-color: #1c1c21;" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="slider" layoutY="54.0" prefHeight="715.0" prefWidth="254.0" style="-fx-background-color: #131316;">
+            <children>
+            <VBox layoutY="40.0" prefHeight="675.0" prefWidth="253.0">
+               <children>
+                      <TextFlow fx:id="newEmailAdd" prefHeight="33.0" prefWidth="255.0" styleClass="hoverEffect">
+                          <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="22.0" />
+                              <Label prefHeight="32.0" prefWidth="170.0" text="New Mail" textFill="WHITE">
+                                  <font>
+                                      <Font name="System Bold" size="22.0" />
+                                  </font>
+                                  <padding>
+                                      <Insets left="10.0" />
+                                  </padding>
+                              </Label>
+                          </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets bottom="10.0" left="27.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                      </TextFlow>
+                  <TextFlow fx:id="account" prefHeight="33.0" prefWidth="255.0" styleClass="hoverEffect">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" size="22.0" />
+                        <Label prefHeight="32.0" prefWidth="170.0" text="Account" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets bottom="10.0" left="27.0" top="10.0" />
+                     </padding>
+                  </TextFlow>
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+      <AnchorPane prefHeight="53.0" prefWidth="65.0">
+         <children>
+            <FontAwesomeIconView fx:id="Menu" fill="WHITE" glyphName="BARS" layoutX="23.0" layoutY="38.0" size="22" />
+            <FontAwesomeIconView fx:id="MenuBack" fill="WHITE" glyphName="BARS" layoutX="23.0" layoutY="38.0" size="22" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="fullEmailScene" layoutX="590.0" prefHeight="768.0" prefWidth="816.0" style="-fx-background-color: #131316;">
+         <children>
+            <AnchorPane fx:id="accountSlider" layoutX="562.0" layoutY="42.0" prefHeight="628.0" prefWidth="260.0" style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="16.0" layoutY="14.0" text="Account Overview" textFill="#b5b5b5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="overviewEmail" layoutX="13.0" layoutY="48.0" text="example@privacy.com" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

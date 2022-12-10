@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #232323;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.submailer.Register">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="558.0" layoutX="666.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/pexels-sami-aksu-13010695.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="79.0" layoutY="100.0" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="79.0" layoutY="181.0" prefHeight="449.0" prefWidth="502.0">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="431.0">
+               <children>
+                  <TextField fx:id="firstName" prefHeight="35.0" prefWidth="200.0" promptText="First Name" style="-fx-background-color: #232323; -fx-text-fill: white; -fx-border-color: white;" />
+                  <TextField fx:id="lastName" prefHeight="35.0" prefWidth="200.0" promptText="Last Name" style="-fx-background-color: #232323; -fx-border-color: white;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <TextField fx:id="email" prefHeight="35.0" prefWidth="432.0" promptText="Email" style="-fx-background-color: #232323; -fx-border-color: white;" />
+            <TextField fx:id="username" prefHeight="35.0" prefWidth="432.0" promptText="Username" style="-fx-background-color: #232323; -fx-border-color: white;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="phoneNumber" prefHeight="35.0" prefWidth="432.0" promptText="Phone Number" style="-fx-background-color: #232323; -fx-border-color: white;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="password" prefHeight="35.0" prefWidth="433.0" promptText="Password" style="-fx-background-color: #232323; -fx-border-color: white;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <PasswordField fx:id="confirmPassword" prefHeight="35.0" prefWidth="433.0" promptText="Confirm Password" style="-fx-background-color: #232323; -fx-border-color: white;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label fx:id="InformationLabel" text=".">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="register" mnemonicParsing="false" onMouseClicked="#SignUpButtonAction" prefHeight="38.0" prefWidth="432.0" style="-fx-background-color: #4090FF;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="loginLabel" contentDisplay="CENTER" onMouseClicked="#OpenLogInForm" text="Already have an account? Log In" textAlignment="CENTER" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="54.0" layoutY="658.0" text="privacy." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

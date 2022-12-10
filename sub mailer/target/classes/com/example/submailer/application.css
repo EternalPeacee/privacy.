@@ -1,0 +1,10 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.hoverEffect:hover{
+-fx-background-color: rgba(5, 105, 255, 0.2);
+
+}
+
+TextField{
+-fx-text-fill: white;
+}
